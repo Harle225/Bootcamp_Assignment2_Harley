@@ -1,80 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ButlerHer</title>
-  <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ButlerHer</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
- <link href="index.css" link>
-  <header class="header">
-    <div class="logo">Butler@HerTaxis</div>
-    <div class="burger" id="burger">
-      <div></div>
-      <div></div>
-      <div></div>
+    <link href="index.css" link>
+    <header class="sticky-header">
+        <div class="logo">Butler@HerTaxis</div>
+        <div class="burger" id="burger" class="sticky">
+            <div></div>
+        </div>
+        <nav class="nav" id="nav" >
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="content">
+            <h1>Butler@Her (Linking her)</h1>
+            <p>Linking female drivers, To Female Passangers.</p>
+
+        </section>
+        <main class="content">
+    <div class="box1">
+        <h2>Our Origins</h2>
+        <img src="Women Hands.png" alt="woman holding hands" width="500" height="150">
+        <a href="Our_Origns.html" rel="About">
+            <button>Find out More</button>
+        </a>
     </div>
-    <nav class="nav" id="nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
 
-  <main class="main">
-    <section class="content">
-      <h1>Butler@Her (Linking her)</h1>
-      <p>Linking female drivers, To Female Passangers.</p>
+    <div class="box2">
+        <h2>Join as a Driver</h2>
+        <img src="female_driver.jpeg" alt="woman driver" width="600" height="150">
+        <a href="Join_as_driver.html" rel="About">
+            <button>Join</button>
+        </a>
+    </div>
 
+    <div class="box3">
+        <h2>Join as a Customer</h2>
+        <p>Just one click away!!!</p>
+        <img src="Taxi hat.jpeg" alt="woman driver hat" width="900" height="150">
+        <a href="Join_as_Customer.html" rel="About">
+            <button>Join</button>
+        </a>
+    </div>
+
+    <div class="box4">
+        <h2>Book a Place/Time</h2>
+        <a href="Book_place_time.html" rel="About">
+            <button>Book a Taxi</button>
+        </a>
+    </div>
+</main>
+
+       <main>
+    <section id="Home">
+        <h1 is="Home">Welcome to Butler@HerTaxis</h1>
+        <p>Linking female drivers to female passengers for a safer ride experience.</p>
     </section>
-    <main class="content">
-        <div class="box">Item 1</div>
-        <div class="box">Item 2</div>
-        <div class="box">Item 3</div>
-        <div class="box">Item 4</div>
-        <div class="box">Item 5</div>
-        <div class="box">Item 6</div>
-    </main>
 
-    <h2>About Us</h2>
-    <p>At Butler@Her we link female only drivers to female only passengers. </p>
-    <ol>
-  <li>Safety</li>
-  <li>Supplying employment for female drivers.</li>
-  <li>Easy to identify by our all purple taxies. (or Taxis with the purple sticker)</li>
-    </ol>
+    <section id="About">
+        <h2 id="About">About Us</a></h2>
+        <p>Our mission is to connect female drivers with female passengers, creating a safe and respectful environment where
+            women can feel truly comfortable during every ride.<br>
+            Whether you’re commuting to work, heading out for a night with friends, or simply running errands,
+            Butler@HerTaxis ensures your journey is smooth, supportive, and secure—all while helping women thrive in the
+            transportation industry.
+        </p>
+        <P>
+            Ready to ride with confidence?
+            Join our growing community today—book your first trip or sign up as a driver and be part of the change
+        </p>
+    </section>
+
+    <section id="Services">
+        <h2 id="Services">Our Services</h2>
+        <ul>
+            <li>Safe female-to-female taxi rides</li>
+            <li>On-demand and scheduled bookings</li>
+            <li>Driver support and onboarding</li>
+        </ul>
+    </section>
 
     <section>
-        <img src="Purple_taxi.webp" alt="PurpleTAXI">
+            <img src="Purple_taxi.webp" alt="PurpleTAXI" >
     </section>
-    <section class="contact-form">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message"></textarea>
-        <div class="form-buttons">
-          <button type="reset">Reset</button>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+
+    <section id="Contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <div class="form-buttons">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </section>
-  </main>
+</main>
 
-  <footer class="footer">
-    <p>&copy; 2025 MySite. All rights reserved.</p>
-  </footer>
 
-  <script>
-    const burger = document.getElementById('burger');
-    const nav = document.getElementById('nav');
+    <footer class="footer">
+        <p>&copy; 2025 MySite. All rights reserved.</p>
+    </footer>
 
-    burger.addEventListener('click', () => {
-      nav.classList.toggle('nav-active');
-    });
-  </script>
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
 
 </body>
+
 </html>

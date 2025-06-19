@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ButlerHer</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <link href="index.css" link>
+    <header class="sticky-header">
+        <div class="logo">Butler@HerTaxis</div>
+        <div class="burger" id="burger">
+            <div></div>
+        </div>
+        <nav class="nav" id="nav">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="content">
+            <h1>Butler@Her (Linking her)</h1>
+            <p>Linking female drivers, To Female Passangers.</p>
+
+
+
+            <h2><strong>Join as a Customer </strong></h2>
+
+
+            <section class="customer-form">
+                <h3>Customer Registration Form</h3>
+                <form id="customerForm">
+                    <input type="text" name="fullName" placeholder="Full Name" required />
+                    <input type="email" name="email" placeholder="Email Address" required />
+                    <input type="tel" name="phone" placeholder="Phone Number" required />
+                    <input type="text" name="city" placeholder="City" required />
+
+                    <label for="preferences">Preferred Taxi Type:</label>
+                    <select name="preferences" id="preferences" required>
+                        <option value="">-- Please choose an option --</option>
+                        <option value="standard">Standard</option>
+                        <option value="female-only">Female Driver Only</option>
+                        <option value="wheelchair">Wheelchair Accessible</option>
+                    </select>
+
+                    <label for="notes">Additional Notes (optional):</label>
+                    <textarea name="notes" rows="4"
+                        placeholder="e.g. Pick-up details, accessibility needs..."></textarea>
+
+                    <div class="form-buttons">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Join Now</button>
+                    </div>
+                </form>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 MySite. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+
+</body>
+
+</html>

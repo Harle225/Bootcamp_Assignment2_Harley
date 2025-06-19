@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ButlerHer</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <link href="index.css" link>
+    <header class="sticky-header">
+        <div class="logo">Butler@HerTaxis</div>
+        <div class="burger" id="burger">
+            <div></div>
+        </div>
+        <nav class="nav" id="nav">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="content">
+            <h1>Butler@Her (Linking her)</h1>
+            <p>Linking female drivers, To Female Passangers.</p>
+
+
+            <h2>Join as a Driver</h2>
+            <p> Fill out the form below to join as a driver.</p>
+
+            <section class="driver-form">
+                <h3>Female Driver Application</h3>
+                <form id="driverForm">
+                    <input type="text" name="fullName" placeholder="Full Name" required />
+                    <input type="email" name="email" placeholder="Email Address" required />
+                    <input type="tel" name="phone" placeholder="Phone Number" required />
+                    <input type="text" name="city" placeholder="City" required />
+                    <input type="text" name="vehicleModel" placeholder="Vehicle Model" required />
+                    <input type="text" name="licensePlate" placeholder="License Plate Number" required />
+                    <label for="experience">Driving Experience (years):</label>
+                    <input type="number" name="experience" min="0" required />
+
+                    <label for="bio">Tell us about yourself:</label>
+                    <textarea name="bio" rows="4" placeholder="Short bio or message..."></textarea>
+
+                    <div class="form-buttons">
+                        <button type="reset">Clear</button>
+                        <button type="submit">Apply Now</button>
+                    </div>
+                </form>
+            </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 MySite. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+
+</body>
+
+</html>

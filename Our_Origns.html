@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ButlerHer</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <link href="index.css" link>
+    <header class="sticky-header">
+        <div class="logo">Butler@HerTaxis</div>
+        <div class="burger" id="burger">
+            <div></div>
+        </div>
+        <nav class="nav" id="nav">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="content">
+            <h1>Butler@Her (Linking her)</h1>
+            <p>Linking female drivers, To Female Passangers.</p>
+
+            <img src="Our_Origins.png">
+
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 MySite. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+
+</body>
+
+</html>
